@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="8dp"
+	app:cardCornerRadius="12dp"
+	app:cardElevation="2dp">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:orientation="horizontal"
+		android:padding="12dp">
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/tvCartItemName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Nama Menu"
+				android:textColor="#333"
+				android:textSize="16sp"
+				android:textStyle="bold" />
+
+			<TextView
+				android:id="@+id/tvCartItemPrice"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Rp 0"
+				android:textColor="#FA2E78"
+				android:textSize="14sp" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical"
+			android:orientation="horizontal"
+			android:background="#FFFFFF"
+			android:padding="4dp">
+
+			<ImageButton
+				android:id="@+id/btnMinus"
+				android:layout_width="25dp"
+				android:layout_height="25dp"
+				android:background="?attr/selectableItemBackgroundBorderless"
+				android:src="@drawable/ic_remove"
+				android:scaleType="centerInside" />
+
+			<TextView
+				android:id="@+id/tvQty"
+				android:layout_width="30dp"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="1"
+				android:textColor="#333"
+				android:textStyle="bold" />
+
+			<ImageButton
+				android:id="@+id/btnPlus"
+				android:layout_width="25dp"
+				android:layout_height="25dp"
+				android:background="?attr/selectableItemBackgroundBorderless"
+				android:src="@drawable/ic_add"
+				android:scaleType="centerInside" />
+		</LinearLayout>
+
+		<ImageButton
+			android:id="@+id/btnDelete"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:layout_marginStart="8dp"
+			android:background="?attr/selectableItemBackgroundBorderless"
+			android:src="@drawable/ic_delete"
+			app:tint="#999" />
+	</LinearLayout>
+</androidx.cardview.widget.CardView>

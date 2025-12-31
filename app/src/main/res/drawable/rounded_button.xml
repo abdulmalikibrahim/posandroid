@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+	android:color="#33000000"> <!-- ripple effect saat ditekan -->
+
+	<item>
+		<shape android:shape="rectangle">
+			<!-- Background putih -->
+			<solid android:color="#FFFFFFFF" />
+
+			<!-- Border ungu -->
+			<stroke
+				android:width="2dp"
+				android:color="#FF6200EE" />
+
+			<!-- Sudut melengkung -->
+			<corners android:radius="30dp" />
+
+			<!-- Padding biar tulisan tombol enak dilihat -->
+			<padding
+				android:left="16dp"
+				android:top="8dp"
+				android:right="16dp"
+				android:bottom="8dp" />
+		</shape>
+	</item>
+
+</ripple>

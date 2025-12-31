@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/splashLayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FFA8C1"
+	android:padding="24dp">
+
+	<ImageView
+		android:id="@+id/appLogo"
+		android:layout_width="200dp"
+		android:layout_height="200dp"
+		android:contentDescription="App Logo"
+		android:src="@drawable/splash_logo"
+		app:layout_constraintBottom_toTopOf="@+id/txtStatus"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_chainStyle="packed" />
+
+	<TextView
+		android:id="@+id/txtStatus"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="32dp"
+		android:text="Mendeteksi lokasi..."
+		android:textColor="#FFFFFF"
+		android:textSize="16sp"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toTopOf="@+id/btnLanjutkan"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/appLogo" />
+
+	<ProgressBar
+		android:id="@+id/progressBar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:indeterminateTint="#FFFFFF"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/txtStatus" />
+
+	<Button
+		android:id="@+id/btnLanjutkan"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:backgroundTint="#FF69B4"
+		android:text="Lanjutkan ke Dashboard"
+		android:textColor="#FFFFFF"
+		android:textStyle="bold"
+		android:visibility="gone"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/progressBar" />
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:orientation="vertical"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<ImageView
+			android:id="@+id/flagIndonesia"
+			android:layout_width="45dp"
+			android:layout_height="45dp"
+			android:src="@drawable/flag_indonesia"
+			android:visibility="gone" />
+
+		<TextView
+			android:id="@+id/txtCountry"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="4dp"
+			android:text="LOKAL ID"
+			android:textColor="#FFFFFF"
+			android:textSize="10sp"
+			android:textStyle="bold"
+			android:visibility="gone" />
+	</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

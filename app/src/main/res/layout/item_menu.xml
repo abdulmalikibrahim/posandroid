@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/cardMenuItem"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="8dp"
+	app:cardCornerRadius="16dp"
+	app:cardElevation="4dp"
+	app:cardBackgroundColor="#FFFFFF"
+	android:clickable="true"
+	android:focusable="true"
+	android:foreground="?attr/selectableItemBackground"> <LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:paddingBottom="12dp">
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:id="@+id/imgMenu"
+			android:layout_width="match_parent"
+			android:layout_height="140dp"
+			android:scaleType="centerCrop" />
+
+		<TextView
+			android:id="@+id/tvBadgeQty"
+			android:layout_width="32dp"
+			android:layout_height="32dp"
+			android:layout_gravity="top|end"
+			android:layout_margin="8dp"
+			android:background="@drawable/circle_badge"
+			android:gravity="center"
+			android:text="1"
+			android:textColor="@color/white"
+			android:textSize="14sp"
+			android:textStyle="bold"
+			android:visibility="gone" />
+
+		<TextView
+			android:id="@+id/tvMenuId"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom|start"
+			android:layout_margin="8dp"
+			android:background="#80000000"
+			android:paddingHorizontal="6dp"
+			android:text="#ID"
+			android:textColor="@color/white"
+			android:textSize="10sp" />
+	</FrameLayout>
+
+	<TextView
+		android:id="@+id/tvMenuName"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingHorizontal="10dp"
+		android:paddingTop="10dp"
+		android:text="Nama Menu"
+		android:textSize="15sp"
+		android:maxLines="2"
+		android:ellipsize="end"
+		android:textStyle="bold"
+		android:textColor="#333" />
+
+	<TextView
+		android:id="@+id/tvMenuPrice"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingHorizontal="10dp"
+		android:paddingTop="2dp"
+		android:text="Rp 0"
+		android:textSize="14sp"
+		android:textStyle="bold"
+		android:textColor="#FA2E78" />
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>
